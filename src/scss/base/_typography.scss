@@ -1,0 +1,57 @@
+@use '../components/buttons' as button;
+
+body {
+    font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: var(--font-serif);
+   font-weight: 400;
+}
+
+h1 {
+    
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+    line-height: var(--line-height);
+}
+
+a {
+    color: var(--color-dark);
+    text-decoration: none;
+    line-height: var(--line-height);
+    &:hover {
+        color: var(--color-accent);
+    }
+
+}
+
+li {
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+}
+
+.button {
+    @include button.default;
+}

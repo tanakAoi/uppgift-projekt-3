@@ -1,0 +1,24 @@
+@use '../utilities/responsive';
+
+.site-header {
+    position: fixed;
+    height: 160px;
+    width: 100%;
+    display: grid;
+    padding: 0 var(--gap-xl);
+    z-index: 99;
+
+    @include responsive.max(40rem) {
+        padding: 0 var(--gap-l);
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__branding {
+        display: block;
+    }
+}
